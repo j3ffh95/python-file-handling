@@ -9,5 +9,8 @@ f = open("names.txt")
 # print(f.read())
 # print(f.read(8))
 
-print(f.readline())
-print(f.readline())
+# print(f.readline())
+# print(f.readline())
+
+for line in f:
+    print(line)
