@@ -5,3 +5,5 @@
 
 
 # Read - error if it doesn't exist
+f = open("names.txt")
+print(f.read())
