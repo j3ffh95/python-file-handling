@@ -16,3 +16,11 @@ for line in f:
     print(line)
 
 f.close()
+
+try:
+    f = open("names.txt")
+    print(f.read())
+except:
+    print("File does not exist")
+finally:
+    f.close()
