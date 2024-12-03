@@ -12,15 +12,24 @@ f = open("names.txt")
 # print(f.readline())
 # print(f.readline())
 
-for line in f:
-    print(line)
+# for line in f:
+#     print(line)
 
+# f.close()
+
+# try:
+#     f = open("names.txt")
+#     print(f.read())
+# except:
+#     print("File does not exist")
+# finally:
+#     f.close()
+
+# Append - creates the file if it doesn't exist
+f = open('names.txt', 'a')
+f.write('\nNeil')
 f.close()
 
-try:
-    f = open("names.txt")
-    print(f.read())
-except:
-    print("File does not exist")
-finally:
-    f.close()
+f = open('names.txt')
+print(f.read())
+f.close()
