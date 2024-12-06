@@ -1,3 +1,5 @@
+import os
+
 # r = Read
 # a = Append
 # w = Write
