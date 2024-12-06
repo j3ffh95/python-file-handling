@@ -35,10 +35,15 @@ f = open("names.txt")
 # f.close()
 
 # Write (overwrite)
-f = open('context.txt', 'w')
-f.write('I delete all of the context.')
-f.close()
+# f = open('context.txt', 'w')
+# f.write('I delete all of the context.')
+# f.close()
 
-f = open('context.txt', 'r')
-print(f.read())
-f.close()
+# f = open('context.txt', 'r')
+# print(f.read())
+# f.close()
+
+# Two ways to create a new file
+
+# Opens a file for writing, creates the file if it does not exist
+f = open("name_list.txt", "w")
