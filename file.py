@@ -55,3 +55,11 @@ f.close()
 if not os.path.exists("jeff.txt"):
     f = open("jeff.txt", "x")
     f.close()
+
+# Delete a file
+
+# Avoid an error if it doesn't exist
+if os.path.exists("jeff.txt"):
+    os.remove("jeff.txt")
+else:
+    print("The file you wish to delete does not exist.")
