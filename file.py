@@ -48,18 +48,24 @@ f = open("names.txt")
 # Two ways to create a new file
 
 # Opens a file for writing, creates the file if it does not exist
-f = open("name_list.txt", "w")
-f.close()
+# f = open("name_list.txt", "w")
+# f.close()
 
 # Creates the specified file, but returns an error if the file exists
-if not os.path.exists("jeff.txt"):
-    f = open("jeff.txt", "x")
-    f.close()
+# if not os.path.exists("jeff.txt"):
+#     f = open("jeff.txt", "x")
+#     f.close()
 
 # Delete a file
 
 # Avoid an error if it doesn't exist
-if os.path.exists("jeff.txt"):
-    os.remove("jeff.txt")
-else:
-    print("The file you wish to delete does not exist.")
+# if os.path.exists("jeff.txt"):
+#     os.remove("jeff.txt")
+# else:
+#     print("The file you wish to delete does not exist.")
+
+with open("more_name.txt") as f:
+    content = f.read()
+
+with open("names.txt", "w") as f:
+    f.write(content)
