@@ -26,10 +26,19 @@ f = open("names.txt")
 #     f.close()
 
 # Append - creates the file if it doesn't exist
-f = open('names.txt', 'a')
-f.write('\nNeil')
+# f = open('names.txt', 'a')
+# f.write('\nNeil')
+# f.close()
+
+# f = open('names.txt')
+# print(f.read())
+# f.close()
+
+# Write (overwrite)
+f = open('context.txt', 'w')
+f.write('I delete all of the context.')
 f.close()
 
-f = open('names.txt')
+f = open('context.txt', 'r')
 print(f.read())
 f.close()
