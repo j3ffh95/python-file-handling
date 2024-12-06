@@ -47,3 +47,4 @@ f = open("names.txt")
 
 # Opens a file for writing, creates the file if it does not exist
 f = open("name_list.txt", "w")
+f.close()
